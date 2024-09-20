@@ -1,0 +1,154 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'howdy';
+  src: url(howdy_lemon.ttf), Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'remachine';
+  src: url(remachine.ttf), Arial, Helvetica, sans-serif;
+}
+
+body {
+	background: #d4b13b;
+	font-family: "remachine", Arial, Helvetica, sans-serif;
+	margin: 0;
+  color: rgb(0, 0, 0);
+}
+
+a {
+  color: #E3DFDE;
+  text-decoration: none;
+}
+label {
+  font-size: 36px;
+}
+
+button {
+  font-family: "howdy", Arial, Helvetica, sans-serif;
+}
+
+
+/* Mobile First View: */
+
+/* Style the header which contains the navigation links */
+header {
+    background-color: #4B3C35;
+    overflow: hidden;
+    font-family: "howdy", Arial, Helvetica, sans-serif;
+    font-style: italic;
+  }
+
+  /* Hide the checkbox which we use for the hamburger menu functionality */
+  #dropmenu_checkbox {
+    display: none;
+  }
+  
+  /* Style the image we use as a label for the hamburger menu checkbox */
+  #dropmenu_image {
+    background-color: rgba(255, 255, 255, 0);
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 40%;
+  }
+  
+  
+  /* Show or hide the navigation links depending on whether the hamburger menu checkbox is checked or not */
+  input[id="dropmenu_checkbox"]:not(:checked) + nav {
+    display: none;
+  }
+
+  input[id="dropmenu_checkbox"]:not(:checked) + h1 {
+    display: none;
+  }
+ 
+  
+  /* Style the heading */
+  h1 {
+    color: #E3DFDE;
+    float: left;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  /* Style the links inside the navigation bar */
+  nav a {
+    color: #E3DFDE;							
+    float: left;
+    font-size: 17px;
+    padding: 30px 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  
+  /* Change the color of links on hover using mouse */
+  nav a:hover {
+    background-color: #E3DFDE;
+    color: #4B3C35;
+  }
+  
+  /* Change the color of the active/current link */
+  .active_nav {
+    background-color: #87604E;
+    color: #E3DFDE;
+  }
+  
+footer {
+	background: #d4b13b;
+  color: #E3DFDE;
+	padding: 32px;
+	text-align: center;
+	width: 100%;
+  font-family:'howdy', Times, serif;
+  font-style: italic;
+  font-size: 16px;
+}
+
+
+
+  
+   /* For desktop: */
+  @media only screen and (min-width: 768px) {
+  
+        /* Hide the dropmenu image we use as a label for the dropmenu checkbox */
+        #dropmenu_image {
+          display: none;
+        }
+  
+        /* Show the navigation links... even if the dropmenu checkbox is not selected (menu open) */
+        input[id="dropmenu_checkbox"]:not(:checked) + nav {
+          display:block
+        }
+
+        input[id="dropmenu_checkbox"]:not(:checked) + h1 {
+          display: block;
+        }
+  
+        /* Style the Golden Paws & Brews heading */
+        h1 {
+          text-align: left;
+          width: 390px;
+        }
+  
+        /* Style the navigation bar */
+        nav {
+          float: right;
+        }
+  
+        /* Style the links inside the navigation bar */
+        nav a {
+          width: auto;
+        }
+  }
+  
+  

@@ -1,0 +1,27 @@
+
+main > div {
+    background-color: #4B3C35;
+    font-size: 42px;
+    text-align: center;
+    padding: 50px;
+}
+
+#logo {
+    background-color: #d4b13b;
+}
+
+h2 {
+    color: #E3DFDE;
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+h3 {
+    color: #E3DFDE;
+    font-size: 64px;
+    font-weight: initial;
+}
+
+a {
+    text-decoration: underline;
+}
